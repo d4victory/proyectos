@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://foreva.com.ar/foreva_webforeva</property>
+        <property name="hibernate.connection.username">foreva_webuser</property>
+        <property name="hibernate.connection.password">I-x(?S@;ryLM</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+       
+       <mapping class="ar.com.pahema.entidades.ArticuloWeb"/>
+       <mapping class="ar.com.pahema.entidades.Categoria"/>
+       <mapping class="ar.com.pahema.entidades.SubCategoria"/>
+       <mapping class="ar.com.pahema.entidades.Marca"/>
+       <mapping class="ar.com.pahema.entidades.Etiqueta"/>
+       <mapping class="ar.com.pahema.entidades.ProductoEtiqueta"/>
+       <mapping class="ar.com.pahema.entidades.ProductoMarca"/>
+    </session-factory>
+</hibernate-configuration>
